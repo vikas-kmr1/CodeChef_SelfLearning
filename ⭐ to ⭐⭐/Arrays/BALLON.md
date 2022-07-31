@@ -53,9 +53,7 @@ for i in range(int(input())):
             print(j+1)
             break
         
-    
-    
-    
+
 ```
 
 ***java***

@@ -44,7 +44,7 @@ for i in range(int(input())):
     n,a,b,c = map(int, input().split())
     
     if n <= b:
-        if n <= a+b:
+        if n <= (a+c):
             print("YES")
         else:
             print("NO")

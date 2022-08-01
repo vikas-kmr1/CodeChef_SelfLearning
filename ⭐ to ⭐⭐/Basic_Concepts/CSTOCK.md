@@ -76,7 +76,7 @@ class Codechef
     
 	        
 	        
-	        
+
 	        
 	    }
 		// your code goes here

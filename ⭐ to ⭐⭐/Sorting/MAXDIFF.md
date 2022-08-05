@@ -38,7 +38,6 @@ for i in range(int(input())):
     print(max( abs(s1-(s-s1)) , abs(s2-(s-s2)) ))
     
 ```
-
 ***java***
 ```
 

@@ -1,5 +1,5 @@
 # [CodeChef_Self-Learning](https://www.codechef.com/selflearning?itm_medium=navmenu&itm_campaign=learncp)
-[  _ to ⭐] [Link](https://www.codechef.com/selflearning/0to1stars0)
+[  _ to ⭐] [Link](https://www.codechef.com/selflearning/0to1stars)
 
 [⭐ to ⭐⭐] [Link](https://www.codechef.com/LP1TO200?order=desc&sortBy=successful_submissions)
 

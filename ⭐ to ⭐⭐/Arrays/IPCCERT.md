@@ -53,5 +53,34 @@ print(cert)
 
 ***java***
 ```
+import java.util.*;
+import java.lang.*;
+import java.io.*;
 
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	Scanner sc =new Scanner(System.in);
+	int n=sc.nextInt();
+	int m=sc.nextInt();
+	int k=sc.nextInt();
+	int kth[]=new int[k];
+	
+	int c=0;
+	for(int i=1;i<=n;i++){
+	    int sum=0;
+          for(int j=0;j<k;j++){
+               kth[j]=sc.nextInt();
+               sum=sum+kth[j];
+          }
+          int q=sc.nextInt();
+          if(q<=10&&sum>=m){
+              c++;
+          }
+	}
+        System.out.println(c) ;
+	}
+}
 ```

@@ -36,4 +36,28 @@
 
 ## Java:
 ```
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc = new Scanner(System.in);
+		    float x= sc.nextFloat();// the amount of cash which Pooja wishes to withdraw.
+		    float y = sc.nextFloat();//Pooja's initial account balance.
+		    
+		    if(x%5 == 0 && y >= x+0.5f){
+		        //Successful Transaction
+		        x = y - x - 0.5f;
+		        System.out.println(String.format("%.2f",x));
+		    }
+		    else{
+                System.out.println(String.format("%.2f",y));
+		    } 
+	}
+}
+
 ```

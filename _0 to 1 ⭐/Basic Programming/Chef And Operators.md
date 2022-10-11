@@ -27,6 +27,19 @@ First and second one are equal.
 # Solution:
 ## Python: 
 ``` 
+def solve(a:int,b:int) -> str:
+    if a>b:
+        return ">"
+    elif b > a:
+        return "<"
+    return "="
+    
+# cook your dish here
+if __name__ == "__main__":
+    
+    for test in range(int(input())):
+        a,b = map(int,input().split())
+        print(solve(a,b))
 ``` 
 ## Java: 
 ```

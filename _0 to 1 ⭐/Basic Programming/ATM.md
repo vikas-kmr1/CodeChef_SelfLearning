@@ -32,6 +32,12 @@
 
 ## Python:
 ```
+amt,bal = map(float, input().split())
+
+if amt%5 == 0 and bal >= amt + 0.50:
+    bal -= (amt+0.50)
+print(format(bal,".2f"))
+
 ```
 
 ## Java:

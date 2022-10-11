@@ -28,6 +28,15 @@ The first line contains an integer <b>T</b>, the total number of testcases. Then
 # Solution: 
 ## Python:
 ``` 
+
+T=int(input())
+for i in range(T):
+    num=int(input())
+    sum=0
+    for j in str(num):
+        sum+=int(j)
+    print(sum)
+
 ``` 
 ## Java: 
 ```

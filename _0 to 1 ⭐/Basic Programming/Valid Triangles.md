@@ -29,6 +29,18 @@ NO
 
 ## Python:
 ```
+def solve(arr):
+    return "YES" if sum(arr) == 180 else "NO"
+    
+# cook your dish here
+if __name__ == "__main__":
+    
+    for test in range(int(input())):
+     
+        arr = list(map(int, input().split()))
+    
+        print(solve(arr))
+
 ```
 
 ## Java:

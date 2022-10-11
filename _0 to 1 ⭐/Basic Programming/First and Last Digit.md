@@ -29,6 +29,12 @@ If Give an integer <b>N</b> . Write a program to obtain the sum of the first and
 
 ## Python:
 ```
+
+for i in range(int(input())):
+    s = input()
+    print(int(s[0]) + int(s[len(s) - 1]))
+
+
 ```
 
 ## Java:

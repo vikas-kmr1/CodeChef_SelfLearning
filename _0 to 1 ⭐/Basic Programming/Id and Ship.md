@@ -24,6 +24,29 @@ Destroyer
 # Solution: 
 ## Python:
 ``` 
+def solve(c):
+    
+    if c.upper() == "B":
+        return "BattleShip"
+    
+    if c.upper() == "C":
+        return "Cruiser"
+    
+    if c.upper() == "D":
+        return "Destroyer"
+    
+    return "Frigate"
+    
+    
+    
+# cook your dish here
+if __name__ == "__main__":
+    
+    for test in range(int(input())):
+      
+    
+        print(solve(input()))
+
 ``` 
 ## Java: 
 ```

@@ -34,6 +34,13 @@ The first line contains an integer <b>T</b>, the total number of test cases. The
 
 ## Python:
 ```
+T = int(input())
+for tc in range(T):
+	# Read integers a and b.
+	(a, b) = map(int, input().split(' '))
+	
+	ans = a + b
+	print(ans)
 ```
 ## java
   ```

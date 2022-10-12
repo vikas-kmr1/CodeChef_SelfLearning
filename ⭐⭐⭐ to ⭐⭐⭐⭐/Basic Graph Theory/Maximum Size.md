@@ -54,7 +54,73 @@
 ***java***
 ```
 
+/*
 
+import java.util.*;
+
+public class Main {
+
+    static int dc[] = {1, 0, 0, -1, -1, -1, 1, 1};
+    static int dr[] = {0, 1, -1, 0, -1, 1, -1, 1};
+
+    public static int visit(char s[][], boolean visited[][], int i, int j, int n, int m) {
+        int score = 1;
+        visited[i][j] = true;
+        for(int k = 0; k < 4; k++) {
+            if(i + dc[k] >= 0 && i + dc[k] < n && j + dr[k] >= 0 && j + dr[k] < m) {
+                if(!visited[i + dc[k]][j + dr[k]] && s[i + dc[k]][j + dr[k]] == '1') {
+                    score += visit(s, visited, i + dc[k], j + dr[k], n, m);
+                }
+            }
+        }
+        return score;
+    }
+
+    public static void solve() {
+        
+        Scanner sc=new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        char s[][] = new char[n][m];
+        for(int i = 0; i < n; i++) {
+            s[i] = sc.next().toCharArray();
+        }
+        boolean visited[][] = new boolean[n][m];
+        for(int i = 0; i < n; i++) {
+            Arrays.fill(visited[i], false);
+        }
+        ArrayList<Integer> scores = new ArrayList<Integer>();
+        for(int i = 0; i < n; i++) {
+            for(int j = 0; j < m; j++) {
+                if(!visited[i][j] && s[i][j] == '1') {
+                    scores.add(visit(s, visited, i, j, n, m));
+                }
+            }
+        }
+        Collections.sort(scores, Collections.reverseOrder());
+        int ans = 0;
+        for(int i = 1; i < scores.size(); i += 2) {
+            ans += scores.get(i);
+        }
+        System.out.println(ans);
+    }
+
+    public static void main(String[] args) {
+
+       Scanner sc = new Scanner(System.in);
+        int t = 0;
+
+        if(t == 0)
+            t = sc.nextInt();
+        
+        for(int i = 0; i < t; i++) {
+
+            solve();
+
+        }
+    }
+}
 
 
 ```

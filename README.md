@@ -23,6 +23,12 @@
 ![](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
 <!-- Made with [contributors-img](https://contrib.rocks). -->
 
+<div align="center">
+<h3>Show some ❤️ by starring the repository!</h3>
+</div>
+
+
+
 <!--
 ## Solution:
 ***python3***

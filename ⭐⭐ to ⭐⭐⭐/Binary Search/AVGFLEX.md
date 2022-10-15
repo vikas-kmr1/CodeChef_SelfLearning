@@ -40,6 +40,24 @@
 
 ## Python
 ```
+t=int(input())
+for i in range(t):
+    n=int(input())
+    a=[int(i)for i in input().split()]
+    a.sort()
+    low=0
+    if n%2==0:
+        
+        high=n+1
+    else:
+        high=n-1
+    mid=(low+high)//2  
+    count=0
+    for i in a:
+        if i >=a[mid]:
+            count+=1
+    print(count)        
+        
 ```
 ## Java
 

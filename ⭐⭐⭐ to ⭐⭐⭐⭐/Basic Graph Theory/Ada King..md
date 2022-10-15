@@ -23,7 +23,7 @@
 <p><img src="https://codechef_shared.s3.amazonaws.com/download/Images/CK102TST/ADAKNG/ADAKNG.png" alt=""></p></div>
 
 
-# SolutionL
+# Solution
 
 ## Python
 ```

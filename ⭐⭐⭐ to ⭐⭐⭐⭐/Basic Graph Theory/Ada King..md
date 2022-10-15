@@ -23,10 +23,21 @@
 <p><img src="https://codechef_shared.s3.amazonaws.com/download/Images/CK102TST/ADAKNG/ADAKNG.png" alt=""></p></div>
 
 
-# SolutionL
+# Solution
 
 ## Python
 ```
+# cook your dish here
+t=int(input())
+for i in range(t):
+    r,c,k=map(int,input().split())
+    v1 = max(r-k,1)
+    v2 = min(8, r+k)
+    h1 = max(c-k,1)
+    h2 = min(c+k, 8)
+    print((v2-v1+1)*(h2-h1+1))
+    
+
 ```
 
 ## Java

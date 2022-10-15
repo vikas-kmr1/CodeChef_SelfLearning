@@ -48,13 +48,45 @@
 ## Solution:
 ***python3***
 ```
+# cook your dish here
+import sys
+sys.setrecursionlimit(1000000)
+def bfs(i,j):
+    global count 
+    if i>=0 and i<n and j>=0 and j<m and mat[i][j]!=0:
+        count+=1
+        mat[i][j]=0
+        bfs(i-1,j)
+        bfs(i+1,j)
+        bfs(i,j-1)
+        bfs(i,j+1)
+            
 
+for t in range(int(input())):
+    (n,m)=(int(i) for i in input().split())
+    mat=[[int(ele) for ele in list(input())] for i in range(n)]
+    
+    #print(alist)
+    comp_len=[]
+    for i in range(n):
+        for j in range(m):
+            if mat[i][j]==0:
+                continue
+            count=0
+            bfs(i,j)
+            comp_len.append(count)
+    comp_len.sort(reverse=True)
+    out=0
+    #print(comp_len)
+    for i in range(1,len(comp_len),2):
+        out+=comp_len[i]
+    print(out)
+        
 ```
 
 ***java***
 ```
 
-/*
 
 import java.util.*;
 
@@ -121,6 +153,5 @@ public class Main {
         }
     }
 }
-
 
 ```

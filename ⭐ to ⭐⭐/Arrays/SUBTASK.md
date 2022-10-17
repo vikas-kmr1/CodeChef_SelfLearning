@@ -1,3 +1,6 @@
+
+[SUBTASK](https://www.codechef.com/submit/SUBTASK)
+
 <div id="problem-statement" class="_problemBody_lulsq_29 print"><h2>Problem</h2>
 <p>Chef recently solved his first problem on CodeChef. The problem he solved has <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.10903em;">N</span></span></span></span></span> test cases. He gets a score for his submission according to the following rules:</p>
 <ol>

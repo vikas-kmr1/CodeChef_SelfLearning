@@ -1,3 +1,6 @@
+
+[CASH](https://www.codechef.com/submit/CASH)
+
 <div id="problem-statement" class="_problemBody_lulsq_29 print"><h2>Problem</h2>
 <h3>Read problem statements in <a href="https://www.codechef.com/download/translated/FEB20/hindi/CASH.pdf">Hindi</a>, <a href="https://www.codechef.com/download/translated/FEB20/bengali/CASH.pdf">Bengali</a>, <a href="https://www.codechef.com/download/translated/FEB20/mandarin/CASH.pdf">Mandarin Chinese</a>, <a href="https://www.codechef.com/download/translated/FEB20/russian/CASH.pdf">Russian</a>, and <a href="https://www.codechef.com/download/translated/FEB20/vietnamese/CASH.pdf">Vietnamese</a> as well.</h3>
 <p>Chef wants to take Chefina on a date. However, he has to complete one more task before leaving. Since he does not want to be late, he is asking you for help.</p>

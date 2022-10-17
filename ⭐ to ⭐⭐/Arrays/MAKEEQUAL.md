@@ -1,3 +1,6 @@
+
+[MAKEEQUAL](https://www.codechef.com/submit/EQUALARRAY)
+
 <div id="problem-statement" class="_problemBody_lulsq_29 print"><h2>Problem</h2>
 <p>Chef has an array <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span></span> having <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi></mrow><annotation encoding="application/x-tex">N</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.6833em;"></span><span class="mord mathnormal" style="margin-right: 0.10903em;">N</span></span></span></span></span> elements. Chef wants to make all the elements of the array equal by repeating the following move.</p>
 <ul>

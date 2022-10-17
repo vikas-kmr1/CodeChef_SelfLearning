@@ -1,3 +1,6 @@
+
+[COLGLF2](https://www.codechef.com/submit/COLGLF2)
+
 <div id="problem-statement" class="_problemBody_lulsq_29 print"><h2>Problem</h2>
 <h3>Read problem statements in <a href="https://www.codechef.com/download/translated/START1/bengali/COLGLF2.pdf">Bengali</a>, <a href="https://www.codechef.com/download/translated/START1/mandarin/COLGLF2.pdf">Mandarin Chinese</a>, <a href="https://www.codechef.com/download/translated/START1/russian/COLGLF2.pdf">Russian</a>, and <a href="https://www.codechef.com/download/translated/START1/vietnamese/COLGLF2.pdf">Vietnamese</a> as well.</h3>
 <p>Chef has just started watching Game of Thrones, and he wants to first calculate the exact time (in minutes) that it'll take him to complete the series.</p>

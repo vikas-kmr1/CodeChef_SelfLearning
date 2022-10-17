@@ -1,3 +1,6 @@
+
+[NOBEL](https://www.codechef.com/submit/NOBEL)
+
 <div id="problem-statement" class="_problemBody_lulsq_29 print"><h2>Problem</h2>
 <p>The growth of Computer Science has forced the scientific community to award Nobel Prize in CS starting from this year.</p>
 <p>Chef knows that the Nobel community is going to award the prize to that person whose research is different from others (ie. no other researcher should work on the same topic). If there are multiple such people, who work on unique topics, then they will all share the prize. It might also happen that no one wins this time.</p>

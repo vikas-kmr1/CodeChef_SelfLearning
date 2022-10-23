@@ -58,5 +58,37 @@ for i in range(int(input())):
 
 ***java***
 ```
-
+public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		while(t-->0)
+		{
+		    int sum=0;
+		    int N=sc.nextInt();
+	    	int P=sc.nextInt();
+	    	int X=sc.nextInt();
+		    int Y=sc.nextInt();
+		    int arr[]=new int[N];
+		    for(int i=0;i<N;i++)
+		    {
+		        arr[i]=sc.nextInt();
+		    }
+		    for(int i=0;i<P;i++)
+		    {
+		        if(arr[i]==0)
+		        {
+		            sum+=X;
+		        }
+		        else{
+		            sum+=Y;
+		        }
+		        
+		    }
+		    System.out.println(sum);
+		}
+		
+		
+	}
 ```

@@ -52,4 +52,25 @@
 ***JAVA***
 
 ```
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		 Scanner sc=new Scanner(System.in);
+	    long t=sc.nextLong();
+	    while(t-->0){
+	        long n=sc.nextLong();
+	        System.out.print(n+" ");
+	        for(long i=1;i<n;i++){
+	            System.out.print(i+" ");
+	        }
+	   System.out.println();
+	        }
+		 
+	}
+	
+}
+
+
 ```

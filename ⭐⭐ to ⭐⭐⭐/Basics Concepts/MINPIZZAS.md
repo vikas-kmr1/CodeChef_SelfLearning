@@ -46,4 +46,40 @@
 
 ***JAVA***
 ```
+class Codechef
+{
+    static long gcd(int a, int b)
+    {
+        // if b=0, a is the GCD
+        if (b == 0)
+            return a;
+ 
+        // call the gcd() method recursively by
+        // replacing a with b and b with
+        // modulus(a,b) as long as b != 0
+        else
+            return gcd(b, a % b);
+    }
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+			BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		int t=Integer.parseInt(br.readLine());
+		String[] in;
+		StringBuilder str = new StringBuilder();
+		
+		for(int i=0; i<t; i++){
+		    	    in=br.readLine().split(" ");
+		    int n=Integer.parseInt(in[0]);
+		    int k=Integer.parseInt(in[1]);
+		    
+		    long lcm = n/(gcd(n,k));
+		    System.out.println(lcm);
+		}
+		 
+	
+	}
+	
+}
+
 ```

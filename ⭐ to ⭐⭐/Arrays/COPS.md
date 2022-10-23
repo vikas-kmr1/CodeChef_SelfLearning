@@ -1,4 +1,3 @@
-<!-- 
 
 <div id="problem-statement" class="_problemBody_lulsq_29 print"><h2>Problem</h2>
 <h3> Read problems statements in <a rel="nofollow noreferrer noopener" href="https://www.codechef.com/download/translated/COOK60/mandarin/COPS.pdf">Mandarin Chinese</a> and <a rel="nofollow noreferrer noopener" href="https://www.codechef.com/download/translated/COOK60/russian/COPS.pdf">Russian</a> as well.</h3>
@@ -47,8 +46,7 @@
 ```
 
 ```
-
 ***java***
 ```
 
-``` -->
+``` 

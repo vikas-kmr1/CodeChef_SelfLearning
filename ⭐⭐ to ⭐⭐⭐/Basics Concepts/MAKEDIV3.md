@@ -51,5 +51,33 @@ for i in range(int(input())):
 
 ***java***
 ```
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+			Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		while(t-->0)
+		{
+		    String s="";
+		    int n=sc.nextInt();
+		    if(n==1) s="3";
+		    else 
+		    {
+		      s="1";
+		      for(int k=1;k<=n-2;k++)
+		      s+="0";
+		      s+="5";
+		    }
+		   System.out.println(s);
+		}
+		    
+		}
+		 
+	
+	
+	
+}
 
 ```

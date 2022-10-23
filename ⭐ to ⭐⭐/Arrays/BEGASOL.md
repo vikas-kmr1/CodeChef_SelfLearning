@@ -1,5 +1,3 @@
-<!-- 
-
 
 <div id="problem-statement" class="_problemBody_lulsq_29 print"><h2>Problem</h2>
 <h3>Read problem statements in <a href="https://www.codechef.com/download/translated/LTIME90/hindi/BEGGASOL.pdf">Hindi</a>, <a href="https://www.codechef.com/download/translated/LTIME90/bengali/BEGGASOL.pdf">Bengali</a>, <a href="https://www.codechef.com/download/translated/LTIME90/mandarin/BEGGASOL.pdf">Mandarin Chinese</a>, <a href="https://www.codechef.com/download/translated/LTIME90/russian/BEGGASOL.pdf">Russian</a>, and <a href="https://www.codechef.com/download/translated/LTIME90/vietnamese/BEGGASOL.pdf">Vietnamese</a> as well.</h3>

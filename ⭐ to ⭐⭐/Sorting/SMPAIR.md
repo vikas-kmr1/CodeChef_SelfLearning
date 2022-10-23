@@ -21,3 +21,29 @@
 5 1 3 4</pre></div><div class="_values_lulsq_204"><pre>4</pre></div></div></div>
 <h3>Explanation:</h3>
 <p>Here we pick <b>a<sub>2</sub></b> and <b>a<sub>3</sub></b>. Their sum equals to 1 + 3 = 4.</p></div>
+#Solution
+
+***java***
+
+'''''
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+         Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();  
+
+        while(t-->0){          
+        int n=sc.nextInt();
+		    int ni[]=new int[n];
+		    for(int i=0;i<n;i++)
+		    {
+		        ni[i]=sc.nextInt();
+		    }
+		    Arrays.sort(ni);
+		    int res=ni[0]+ni[1];
+		   System.out.println(res);
+        }
+    }
+}
+''''

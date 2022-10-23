@@ -84,5 +84,31 @@ for i in range(int(input())):
 
 ***java***
 ```
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		for(int i=0;i<t;i++)
+		{
+		   int u=sc.nextInt();
+		   int v=sc.nextInt();
+		   int a=sc.nextInt();
+		   int s=sc.nextInt();
+		   double sv=Math.sqrt(u*u-2*a*s);
+		   if (sv>v)
+		   {
+		       System.out.println("NO");
+		   }
+		   else {
+		       System.out.println("YES");
+		   }
+		}
+	}
+	
+}
+
 
 ```

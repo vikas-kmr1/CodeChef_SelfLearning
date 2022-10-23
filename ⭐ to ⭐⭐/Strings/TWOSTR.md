@@ -47,5 +47,34 @@ for i in range(int(input())):
 
 ***java***
 ```
+public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		
+		Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		while(t-->0)
+		{
+		    String a=sc.next();
+		    String b=sc.next();
+		    
+		    int c=0;
+		    
+		
+		    
+		    for (int i=0;i<a.length();i++)
+		    {
+		        if(a.charAt(i)=='?' || b.charAt(i) == '?' || a.charAt(i)==b.charAt(i))
+		        c++;
+		        
+		        else
+		        break;
+		    }
+		    if(c == a.length())
+		    System.out.println("Yes");
+		    else
+		    System.out.println("No");
+		}
+	}
 
 ```

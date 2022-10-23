@@ -21,13 +21,13 @@
 5 1 3 4</pre></div><div class="_values_lulsq_204"><pre>4</pre></div></div></div>
 <h3>Explanation:</h3>
 <p>Here we pick <b>a<sub>2</sub></b> and <b>a<sub>3</sub></b>. Their sum equals to 1 + 3 = 4.</p></div>
-#Solution
 
+## Solution:
 ***java***
+```
+# cook your dish here
 
-'''''
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args){
          Scanner sc = new Scanner(System.in);
@@ -45,5 +45,5 @@ public class Main {
 		   System.out.println(res);
         }
     }
-}
-''''
+}   
+```

@@ -42,6 +42,12 @@
 
 ***PYTHON***
 ```
+import math
+tests=int(input())
+for i in range(tests):
+    n,k=map(int,input().split())
+    lcm=(n*k)//math.gcd(n,k)
+    print(lcm//k)
 ```
 
 ***JAVA***

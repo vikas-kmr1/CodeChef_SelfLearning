@@ -79,6 +79,7 @@ for i in range(t):
         print("NO")
 
 ```
+
 ***java***
 
 ```
@@ -124,4 +125,4 @@ class Codechef
 		}
 	}
 }
-
+```

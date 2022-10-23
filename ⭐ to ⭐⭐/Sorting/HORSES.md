@@ -39,5 +39,28 @@ for i in range(int(input())):
 
 ***java***
 ```
+public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+	Scanner s = new Scanner(System.in);
+		int t = s.nextInt();
+		for(int i=0; i<t; i++){
+		    int n = s.nextInt();
+		    int arr[] = new int[n];
+		    for(int j=0; j<n; j++){
+		        arr[j] = s.nextInt();
+		    }
+		    int dif = Integer.MAX_VALUE;
+		    for(int j=0; j<n; j++){
+		        for(int k=j+1; k<n; k++){
+		            if(Math.abs(arr[j]-arr[k]) < dif){
+		                dif = Math.abs(arr[j]-arr[k]);
+		            }
+		        }
+		    }
+		    
+		    System.out.println(dif);
+		}
+}
 
 ```

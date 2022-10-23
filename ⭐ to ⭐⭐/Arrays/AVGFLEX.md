@@ -67,3 +67,30 @@ for i in range(t):
     print(ans)
 
 ```
+
+***java***
+
+```
+public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		int T=Integer.parseInt(br.readLine());
+		while(T-->0){
+		    int n=Integer.parseInt(br.readLine());
+		    String[] s=(br.readLine()).split(" ");
+		    Map<Integer,Integer>m=new TreeMap<>();
+		    for(int i=0;i<n;i++){
+		        int key=Integer.parseInt(s[i]);
+		        m.put(key,m.getOrDefault(key,0)+1);
+		    }
+		    int count=0,ans=0;
+		    for(int i:m.keySet()){
+		        count+=m.get(i);
+		        if(count>n-count){
+		            ans+=m.get(i);
+		        }
+		    }
+		    System.out.println(ans);
+		}
+```

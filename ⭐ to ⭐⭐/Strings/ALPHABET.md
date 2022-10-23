@@ -53,5 +53,26 @@ for i in range(int(input())):
 
 ***java***
 ```
+public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc = new Scanner(System.in);
+		String s=sc.next();
+		int n=sc.nextInt();
+		while(n-->0)
+		{
+		    int c=0;
+		    String w=sc.next();
+		    for(int i=0;i<w.length();i++)
+		    {
+		        if(s.indexOf(w.charAt(i))>=0) c++;
+		    }
+		    if(c==w.length()) 
+		    System.out.println("Yes");
+		    else 
+		    System.out.println("No");
+		}
+	}
+}
+
 
 ```

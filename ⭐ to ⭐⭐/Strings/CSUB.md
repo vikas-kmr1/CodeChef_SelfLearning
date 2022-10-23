@@ -40,5 +40,35 @@ for i in range(int(input())):
 
 ***java***
 ```
+public static void main (String[] args) throws java.lang.Exception
+	{
+		 Scanner sc=new Scanner(System.in);
+		 
+		 
+		 int t=sc.nextInt();
+		 
+		 int n;
+		 String s;
+		 long total;
+		 long one;
+		 
+		 
+		 while(t>0) {
+		    n=sc.nextInt();
+		    s=sc.next();
+		    
+		    one=0;
+		    
+		    for(char ch:s.toCharArray()) {
+		       if(ch=='1')
+		         one++;
+		    }
+		    
+		    total=(one*(one+1))/2;
+		    
+		    System.out.println(total);
+		    
+		    t--;
+    }
 
 ```

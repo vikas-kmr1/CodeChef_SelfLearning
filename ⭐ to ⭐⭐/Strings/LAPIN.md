@@ -47,5 +47,32 @@ for i in range(int(input())):
 
 ***java***
 ```
-
+public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		while(t-->0)
+		{
+		    String s=new String();
+		    s=sc.next();
+		    int len=s.length();
+		    String sub1=new String();
+		    sub1=s.substring(0,len/2);
+		    String sub2=new String();
+		    if(len%2==0)
+		    sub2=s.substring(len/2,len);
+		    else
+		    sub2=s.substring((len/2)+1,len);
+		    
+		    char[] c1=sub1.toCharArray();
+		    char[] c2=sub2.toCharArray();
+		    Arrays.sort(c1);
+		    Arrays.sort(c2);
+		    if(Arrays.equals(c1,c2))
+		    System.out.println("YES");
+		    else
+		    System.out.println("NO");
+		}
+	}
 ```

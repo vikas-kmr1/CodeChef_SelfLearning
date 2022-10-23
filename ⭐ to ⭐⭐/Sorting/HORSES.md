@@ -39,7 +39,7 @@ for i in range(int(input())):
 
 ***java***
 ```
-	public static void main (String[] args) throws java.lang.Exception
+public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
 	Scanner s = new Scanner(System.in);
@@ -61,6 +61,6 @@ for i in range(int(input())):
 		    
 		    System.out.println(dif);
 		}
-	}
+}
 
 ```

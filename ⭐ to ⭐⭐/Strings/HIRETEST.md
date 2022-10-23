@@ -84,5 +84,55 @@ for i in range(int(input())):
 
 ***java***
 ```
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		while(t-->0){
+		    int n = sc.nextInt();
+		    int m = sc.nextInt();
+		    int x = sc.nextInt();
+		    int y = sc.nextInt();
+		    int fully = 0;
+		    int partially = 0;
+		    int unsolved = 0;
+		    for(int i=0 ;i<n ;i++){
+		        String s = sc.next();
+		        for(int j=0 ;j<m ;j++){
+		        if(s.charAt(j)=='F'){
+		            fully++;
+		        }
+		        else if(s.charAt(j)=='P'){
+		            partially++;
+		        }
+		        else{
+		            unsolved++;
+		        }
+		    }
+		    if(fully >= x){
+		        System.out.print(1);
+		    }
+		    else if(fully>=(x-1) && partially>=y){
+		        System.out.print(1);
+		    }
+		    else{
+		        System.out.print(0);
+		    }
+		    fully = 0;
+		    partially =0;
+		    unsolved = 0;
+		}
+		System.out.print("\n");
+		}
+	}
+}
 
 ```

@@ -42,5 +42,19 @@ for i in range(int(input())):
 
 ***java***
 ```
-
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc = new Scanner(System.in);
+		int t=sc.nextInt();
+		int count=0;
+		for(int i=0; i<t; i++){
+		    String str = sc.next();
+		     if(str.contains("010") || str.contains("101")){
+		        System.out.println("Good");
+		    }
+		    else{
+		        System.out.println("Bad");
+		    }
+		}
 ```

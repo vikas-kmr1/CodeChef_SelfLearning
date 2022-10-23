@@ -79,3 +79,50 @@ for i in range(t):
         print("NO")
 
 ```
+
+***java***
+
+```
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		try(Scanner S = new Scanner(System.in)){
+		    int t = S.nextInt();
+		    for(int i=0;i<t;i++){
+		        String str = S.next();
+		        boolean sp=false,l=false,u=false,d=false,len=false;
+		        
+		            for(int i1=1;i1<str.length()-1;i1++){
+		                if(Character.isDigit(str.charAt(i1)))
+		                    d=true;
+		                else if(Character.isLowerCase(str.charAt(i1)))
+		                    l=true;
+		                else if(Character.isUpperCase(str.charAt(i1)))
+		                    u=true;
+		                else 
+		                    sp = true;
+		            }
+		            if(Character.isLowerCase(str.charAt(0))||Character.isLowerCase(str.charAt(str.length()-1)))
+                        l = true;
+                    if(str.length()>=10)
+                        len = true;
+                    if(d&&l&&u&&sp&&len)
+                        System.out.println("YES");
+                    else
+                        System.out.println("NO");
+    		        
+		        
+		    }
+		}catch(Exception e){
+		    return;
+		}
+	}
+}
+```

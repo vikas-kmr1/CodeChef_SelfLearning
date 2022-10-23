@@ -52,4 +52,46 @@
 ***JAVA***
 
 ```
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		 
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		
+		while(t-->0){
+		    int n = sc.nextInt();
+		    long a = sc.nextLong();
+		    long b = sc.nextLong();
+		    
+		    long sarthak = 0, anuradha = 0;
+		    
+		    while(n-->0){
+		        String A = sc.next();
+		        
+		        if(A.charAt(0) == 'E' || A.charAt(0) == 'Q' || A.charAt(0) == 'U' || A.charAt(0) == 'I' || A.charAt(0) == 'N' || A.charAt(0) == 'O' || A.charAt(0) == 'X')
+		           sarthak += a ;
+		        else 
+		           anuradha += b ;
+		    }
+		    
+		    if(sarthak > anuradha)
+		        System.out.println("SARTHAK");
+		    else if(sarthak < anuradha)
+		        System.out.println("ANURADHA");
+		    else 
+		        System.out.println("DRAW");
+		      
+		}
+	}
+	
+}
+
 ```

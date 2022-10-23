@@ -54,6 +54,41 @@ Invalid</pre></div></div></div>
 ## SOLUTIONS:
 ***JAVA***
 ```
+	Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		while(t-->0){
+		    int size=sc.nextInt();
+		    String str = sc.next();
+		    String snake = "";
+            boolean flag= true;
+		    for (int i=0;i<size ;i++ ){
+		        if(str.charAt(i)=='H' || str.charAt(i)=='T'){
+		            snake+=str.charAt(i);
+		        }
+		    }
+		    //System.out.println(snake);
+		    if(snake.length()==0){
+		        flag=true;
+		    }else if (snake.length()%2!=0){
+		        flag=false;
+		    } else{
+		        for (int i=0;i<snake.length() ;i++ ){
+		            if(i%2==0){
+		                if(snake.charAt(i)!='H'){
+		                    flag=false;}
+		            }else{
+		                if(snake.charAt(i)!='T'){
+		                    flag=false;}
+		            }
+		        } 
+		    }
+		    if(flag==true){
+		        System.out.println("Valid");
+		    }else{
+		        System.out.println("Invalid");
+		    }
+		    
+		}
 ```
 
 ***PYTHON***

@@ -40,4 +40,28 @@ The minimum number of times the magic wand needed to be used here was <span clas
 
 ***JAVA***
 ```
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes InheritableThreadLocal
+		Scanner sc=new Scanner(System.in);
+		int test=sc.nextInt();
+		while(test-->0)
+		{
+		  String s=sc.next();
+		  char open='1';
+		  char cl='0';
+		  int spell=0;
+		  for(int k=0;k<s.length();k++)
+		  {
+		     if(s.charAt(k)==cl)
+		     {
+		       ++spell;
+		       char t=cl;
+		       cl=open;
+		       open=t;
+		     }
+		  }
+		  System.out.println(spell);
+		}
+	}
 ```

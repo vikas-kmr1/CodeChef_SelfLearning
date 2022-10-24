@@ -30,13 +30,13 @@ The string contains both <b>010</b> and <b>101</b> as substrings.
 ***python3***
 ```
 # cook your dish here
-for i in range(int(input())):
-    s = input()
-    
-    if ("101" in s)  or  ("010" in s):
-        print("Good")
-        continue
-    print("Bad")    
+t=int(input())
+for i in range(t):
+    num=input()
+    if (num.find('010')!=-1 or num.find('101')!=-1):
+        print('Good')
+    else:
+        print('Bad')  
 
 ```
 

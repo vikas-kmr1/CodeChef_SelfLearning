@@ -7,17 +7,24 @@ assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+#Description:
+A clear and concise description of what the problem is.
 
 **Describe your issue here**
 A clear and concise description of what you want to happen.
 * add problem statement
 * attach link
 
+***ADD YOUR SOLUTIONS IN THE FOLLOWING FOLDER:***
+<!-- add a link to the directory where you want to add files -- >
+[]()
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+*** Add Solutions to the following Problems:
+<!-- Add links to the problems-->
+[]()
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+**NOTE**
+*  Please add relevant comments to your code.
+*  Plagiarism can't be tolerated.
+*  Add valid and meaningful commit messages
+*  Fill PR details carefully and mention the issue number that you have solved.

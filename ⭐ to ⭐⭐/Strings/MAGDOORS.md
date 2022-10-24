@@ -61,7 +61,6 @@ for i in range(t):
 for ele in ans:
     print(ele)
 
-
 ```
 
 ***JAVA***

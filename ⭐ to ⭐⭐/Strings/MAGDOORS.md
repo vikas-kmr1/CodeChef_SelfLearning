@@ -36,6 +36,31 @@ The minimum number of times the magic wand needed to be used here was <span clas
 ## SOLUTIONS:
 ***PYTHON***
 ```
+
+def invert(val):
+    for i in range(len(val)):
+        if val[i]=='0':
+            val[i]='1'
+        else:
+            val[i]='0'
+    
+t=int(input())
+count=0
+ans=[]
+li=[]
+for i in range(t):
+    num=input()
+    li=[]
+    li[:0]=num
+    count=0
+    for s in li:
+        if s=='0':
+            invert(li)
+            count+=1
+    ans.append(count)
+for ele in ans:
+    print(ele)
+
 ```
 
 ***JAVA***

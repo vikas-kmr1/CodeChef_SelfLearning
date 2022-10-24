@@ -48,6 +48,18 @@
 
 ***PYTHON***
 ```
+# cook your dish here
+from itertools import permutations
+casos = int(input())
+for i in range(casos):
+    n = int(input())
+    if n == 2:
+        print('2 1')
+    else:
+        print('1', end = ' ')
+        for i in range(3, n+1):
+            print(i, end=' ')
+        print('2')
 ```
 ***JAVA***
 

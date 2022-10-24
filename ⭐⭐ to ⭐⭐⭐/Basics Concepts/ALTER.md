@@ -44,6 +44,32 @@ NO
 ***Python***
 
 ```
+def fun(a,b,x,y):
+    if((x%a)==0):
+        A=x/a
+        if((y%b)==0):
+            B=y/b
+            if((A==B)or(abs(A-B)==1)):
+                print("YES")
+            else:
+                print("NO")
+        else:
+            print("NO")
+    else:
+        print("NO")
+    
+n=int(input())
+if(1<=n<=(pow(10,3))):
+    for i in range(n):
+        a,b,x,y=map(int,input().split())
+        p=pow(10,9)
+        if((1<=a<=p)and(1<=b<=p)and(1<=x<=p)and(1<=y<=p)):
+            if(a>b):
+                fun(a,b,x,y)
+            else:
+                fun(b,a,y,x)
+        else:
+            print("NO")
 ```
 
 ***JAVA CODE***

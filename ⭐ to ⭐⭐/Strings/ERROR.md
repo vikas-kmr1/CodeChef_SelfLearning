@@ -37,7 +37,7 @@ for i in range(t):
         print('Good')
     else:
         print('Bad')  
-
+	
 ```
 
 ***java***

@@ -93,4 +93,26 @@ Invalid</pre></div></div></div>
 
 ***PYTHON***
 ```
+
+# cook your dish here
+t=int(input())
+num=0
+li=[]
+h_count=0
+t_count=0
+for i in range(t):
+    num=int(input())
+    s=input()
+    s=s.replace(".","")
+    h_count=s.count('H')
+    t_count=s.count('T')
+    if h_count==t_count:
+        val=s.count('HT')
+        if val*2==len(s):
+            print('Valid')
+        else:
+            print('Invalid')
+    else:
+        print('Invalid')
+
 ```

@@ -43,6 +43,106 @@
 
 ***JAVA***
 ```
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+
+
+		BufferedReader rd = new BufferedReader(new InputStreamReader(System.in));
+		
+		int t = Integer.parseInt(rd.readLine());
+		
+        for (int tc = 0; tc < t; tc++) {
+
+			String [] n_q = rd.readLine().split(" ");
+
+			int n = Integer.parseInt(n_q[0]);
+			int q = Integer.parseInt(n_q[1]);
+
+			String [] s1 = rd.readLine().split(" ");
+
+			int [] s = new int[n];
+
+			long sm = 0;
+
+			for (int i = 0; i < n; i++) {
+				s[i] = Integer.parseInt(s1[i]);
+				sm +=  (long) s[i];
+			}
+
+			Arrays.sort(s);
+
+			int [] qw = new int[q];
+			
+			Map<Integer, Integer> mp = new HashMap<>();
+
+
+			for (int i = 0; i < q; i++) {
+				qw[i] =  Integer.parseInt(rd.readLine());
+				
+				if (mp.containsKey(qw[i]) == false) {
+					mp.put(qw[i], -1);
+				}
+			}
+
+			int [] arr = new int [mp.size()];
+			int ind = 0;
+
+			for (Map.Entry<Integer, Integer> pair : mp.entrySet()) {
+				arr[ind] = pair.getKey();
+				ind += 1;
+			}
+
+			Arrays.sort(arr);
+			int pt = 0;
+			long cur = 0;
+
+			int pt2 = 0;
+			long cur2 = 0;
+			
+
+			for (int i = 0; i < arr.length; i++) {
+
+				while (pt2 < n && s[pt2] < arr[i]) {
+					cur2 +=  (long) s[pt2];
+					pt2 += 1;
+				}
+
+				if (pt2 == n) {
+					while (pt < n &&  (long) pt <   (long)(n - pt) *  (long) arr[i] -  (sm - cur)) {
+						cur +=   (long) s[pt];
+						pt += 1;
+					}
+
+				} else {
+					while (pt < pt2 && (long) pt < (long)(pt2 - pt) * (long) arr[i] - (sm - cur - (sm - cur2))) {  
+						cur +=  (long) s[pt];
+						pt += 1;
+					}
+				}
+				
+				if (pt == pt2) {
+					mp.put(arr[i], n - pt2);
+				} else {
+					mp.put(arr[i], (n - pt2) + (pt2 - pt));
+				}
+
+			}
+
+			for (int i = 0; i < q; i++) {
+				System.out.println(mp.get(qw[i]));
+			}
+
+        }
+
+
+	}
+}
 ```
 
 ***PYTHON***

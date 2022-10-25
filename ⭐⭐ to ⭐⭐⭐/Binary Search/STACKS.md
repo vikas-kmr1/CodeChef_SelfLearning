@@ -71,6 +71,50 @@ If there are multiple correct answers, you are allowed to output any of them.
 
 ***JAVA***
 ```
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	  Scanner sc=new Scanner(System.in);
+	  Byte t=sc.nextByte();
+	  while(t--!=0)
+	  {
+	      int n=sc.nextInt();
+	      int c=0;
+	      long a[]=new long[n];
+	      long temp=sc.nextLong();
+	      a[c++]=temp;
+	      for(int i=1;i<n;i++)
+	      {
+	          temp=sc.nextLong();
+	          if( a[c-1]<=temp)
+	          {
+	          a[c++]=temp;
+	          continue;
+	          }
+	          int low=0,high=c-1;
+	          while(high>low)
+	          {
+	              int mid=(low+high)/2;
+	              if(a[mid]<=temp)
+	              low=mid+1;
+	              else
+	              high=mid;
+	          }
+	          a[low]=temp;
+	         
+	      }
+	      System.out.print(c+" ");
+	      for(int i=0;i<c;i++)
+	      System.out.print(a[i]+" ");
+	      System.out.println();
+	  }
+	}
+}
 ```
 
 ***PYTHON***

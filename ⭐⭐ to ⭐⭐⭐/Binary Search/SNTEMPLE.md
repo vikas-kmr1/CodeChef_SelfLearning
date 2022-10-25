@@ -38,6 +38,125 @@ i.e. a consecutive section of 1, 2, 3, .. x-1, x, x-1, x-2, .., 1 can correspond
 
 ***JAVA***
 ```
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+
+
+		BufferedReader rd = new BufferedReader(new InputStreamReader(System.in));
+		
+		int t = Integer.parseInt(rd.readLine());
+		
+        for (int tc = 0; tc < t; tc++) {
+
+			int n = Integer.parseInt(rd.readLine());
+
+			String [] s_a = rd.readLine().split(" ");
+
+			int [] arr = new int[n];
+
+			long sm = 0;
+			for (int i = 0; i < n; i++) {
+				arr[i] = Integer.parseInt(s_a[i]);
+				sm += arr[i];
+			}
+
+			int l = 1;
+			int r = n;
+			long cnt = -1;
+
+			while (l <= r) {
+				int mid = l + (r - l) / 2;
+
+				int [] left = new int [n];
+				int pt = 0;
+				int cur = 0;
+
+				for (int i = 0; i < n; i++) {
+
+					if (i < mid - 1) {
+						left[i] = -1;
+						continue;
+					}
+
+					while (true) {
+						if (cur == mid) {
+							cur -= 1;
+							break;
+						} 
+
+						if (arr[pt] < cur + 1) {
+							cur -= 1;
+							break;
+						} else {
+							cur += 1;
+							pt += 1;
+						}								
+					}
+
+					left[i] = cur + 1;
+				}
+
+
+				int [] right = new int [n];
+				pt = n - 1;
+				cur = 0;
+				
+				for (int i = n - 1; i >= 0; i--) {
+
+					if (i > n - mid) { 
+						right[i] = -1;
+						continue;
+					}
+
+					while (true) {
+						if (cur == mid) {
+							cur -= 1;
+							break;
+						} 
+
+						if (arr[pt] < cur + 1) {
+							cur -= 1;
+							break;
+						} else {
+							cur += 1;
+							pt -= 1;
+						}								
+					}
+
+					right[i] = cur + 1;
+				}
+
+				boolean flag = false;
+
+				for (int i = 0; i < n; i++) {
+					if (left[i] == mid && right[i] == mid) {
+						flag = true;
+						break;
+					}
+				}
+
+
+				if (flag) {
+					cnt = sm -  (mid * (mid + 1) -  mid);
+					l = mid + 1;
+				} else {
+					r = mid - 1;
+				}
+				
+			}
+
+			System.out.println(cnt);
+
+        }
+
+	}
+}
 ```
 
 ***PYTHON***
